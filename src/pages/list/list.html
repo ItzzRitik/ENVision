@@ -1,23 +1,104 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title>Inventory</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
-      <ion-icon [name]="item.icon" item-start></ion-icon>
-      {{item.title}}
-      <div class="item-note" item-end>
-        {{item.note}}
-      </div>
-    </button>
+<ion-content class="list-avatar-page">
+  <ion-list padding>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-woody.png">
+      </ion-avatar>
+      <h2>Apple</h2>
+      <p>▣ 100 items in stock</p>
+      <ion-note item-end>3:43 pm</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-buzz.png">
+      </ion-avatar>
+      <h2>Notebooks</h2>
+      <p>▣ 50 Items in stock</p>
+      <ion-note item-end>1:12 pm</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-jessie.png">
+      </ion-avatar>
+      <h2>Bread</h2>
+      <p>▣ 3 Items in stock</p>
+      <ion-note item-end>10:03 am</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-potatohead.png">
+      </ion-avatar>
+      <h2>Orange</h2>
+      <p>▣ 48 Items in stock</p>
+      <ion-note item-end>5:47 am</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-barbie.png">
+      </ion-avatar>
+      <h2>Cupcake</h2>
+      <p>▣ 23 Items in stock</p>
+      <ion-note item-end>Sun</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-squeeze.png">
+      </ion-avatar>
+      <h2>Biscuit</h2>
+      <p>▣ 39 Items in stock</p>
+      <ion-note item-end>Fri</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-sarge.png">
+      </ion-avatar>
+      <h2>Chips</h2>
+      <p>▣ 21 Items in stock</p>
+      <ion-note item-end>Wed</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-bopeep.png">
+      </ion-avatar>
+      <h2>Ball Pen</h2>
+      <p>▣ 13 Items in stock</p>
+      <ion-note item-end>Mon</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-hamm.png">
+      </ion-avatar>
+      <h2>Ketchup</h2>
+      <p>▣ 64 Items in stock</p>
+      <ion-note item-end>11:11 pm</ion-note>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/avatar-ts-slinky.png">
+      </ion-avatar>
+      <h2>Grapes</h2>
+      <p>▣ 5 Items in stock</p>
+      <ion-note item-end>8:54 pm</ion-note>
+    </ion-item>
+
   </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
 </ion-content>
