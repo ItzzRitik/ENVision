@@ -1,0 +1,8 @@
+{
+  "name": "ENVision",
+  "app_id": "a1accc00",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
