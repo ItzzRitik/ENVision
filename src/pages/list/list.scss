@@ -5,3 +5,28 @@
     margin-top: 14px;
   }
 }
+
+.addButton{
+	position: fixed;
+	color: #fff;
+	background-color: #322f3e;
+	width: 80%;
+	height: 40px;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 80px -40%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 8px 2px #888888;
+}
+
+.toolIcon{
+	font-size: 20px; 
+	color: #444;
+}
+
+.toolLabel{
+	display: block; 
+	font-size: 10px; 
+	color: #444; 
+	margin-top: 5px;
+}
