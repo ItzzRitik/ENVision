@@ -1,27 +1,35 @@
 .list-avatar-page {
-  ion-note {
-    font-size: 12px;
-    align-self: flex-start;
-    margin-top: 14px;
-  }
+	background-color: #fafafa;
+	ion-note {
+		font-size: 12px;
+		align-self: flex-start;
+		margin-top: 14px;
+	}
+	ion-item{
+		min-height: 80px;
+		background-color: #fafafa;
+	}
 }
 
+.addDiv{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: rgba(255,255,255,0.8);
+}
 .addButton{
 	position: fixed;
-	color: #fff;
+	color: #ecedef;
 	background-color: #322f3e;
 	width: 80%;
-	height: 40px;
-    bottom: 0;
-    left: 50%;
-    margin: 0 0 80px -40%;
-    border-radius: 2px;
-    box-shadow: 0px 0px 8px 2px #888888;
-}
-
-.toolIcon{
-	font-size: 20px; 
-	color: #444;
+	height: 45px;
+	bottom: 0;
+	left: 50%;
+	font-size: 16px;
+	margin: 0 0 80px -40%;
+	border-radius: 2px;
+	box-shadow: 0px 0px 8px 2px #888888;
 }
 
 .toolLabel{
